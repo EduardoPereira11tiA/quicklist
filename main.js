@@ -66,3 +66,15 @@ function removeItem(itemName) {
 
     showItemsList()
 }
+
+function checkItem(itemName) {
+    const item = items.find((item) => item.name === itemName)
+
+    if(item.checked === true){
+        item.checked = false
+    } else {
+        item.checked = true
+    }
+    
+    showItemsList()
+}
