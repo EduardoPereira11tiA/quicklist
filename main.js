@@ -48,3 +48,13 @@ function showItemsList(){
 
 
 }
+
+function removeItem(itemName) {
+    const itemIndex = items.findIndex((item) => item.name === item.name)
+
+    if(itemIndex !== -1) {
+        items.splice(itemIndex, 1)
+    }
+
+    showItemsList()
+}
